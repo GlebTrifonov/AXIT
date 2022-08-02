@@ -417,7 +417,7 @@ padding-top: 102px;
 display: flex;
 align-items: center;
 flex-direction: column;
-padding-top: 102px;
+margin-top: 102px;
 }
 
 .pricing__options {
@@ -439,12 +439,11 @@ padding-top: 102px;
 }
 
 .pricing__columns {
+    max-width: 1120px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-left: 147px;
-    margin-right: 147px;
-    
+    justify-content: space-between;    
+    margin: 0 auto;
 }
 
 .pricing__column {
@@ -532,6 +531,7 @@ padding-top: 102px;
 
 
 .cusrtomes__section{
+    width: 100%;
     height: 600px;
 }
 
@@ -575,6 +575,7 @@ justify-content: space-between;
     height: 225px;
     width: 290px;
     margin-right: 98px;
+    margin-top: 85px;
 }
 
 .cite__column__text {
@@ -590,11 +591,20 @@ justify-content: space-between;
 
 .cite__column__autor{
 display: flex;
-align-items: flex-end;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+gap: 14px;
+}
+.autor__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
 }
 
 .cite__column__img {
-    padding-top: 28px;
+    
 }
 
 .cite__column__autor__name {
@@ -603,12 +613,14 @@ align-items: flex-end;
     font-weight: 700;
     font-size: 20px;
     color: #333333;
+    margin: 0;
 }
 
 .cite__column__autor__job {
     font-weight: 400;
     font-size: 14px;
     color: #86878B;
+    margin: 0;
 }
 
 .triangle {
@@ -621,14 +633,13 @@ align-items: flex-end;
 }
 
 .stylish {
+    width: 100%;
     height: 100%;
-    background-image: url('../img/background2.png');
     background-size: cover;
-    background: linear-gradient(#333333);
+    background: linear-gradient(45deg,
+        #33333394,
+        #33333394), url('../img/background2.png');
 }
-
-
-
 
 .stylish__header {
 display: flex;
@@ -679,8 +690,12 @@ color: white;
 }
 
 .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100%;
-
+    max-width: 1120px;
+    margin: 0 auto;
 }
 
 .contact__header {
@@ -688,11 +703,11 @@ display: flex;
 align-items: center;
 flex-direction: column;
 padding-top: 53px;
+margin-bottom: 119px;
 }
 
 .contact__options {
     font-size: 36px;
-
 }
 
 .contact__rectangle {
@@ -709,15 +724,15 @@ padding-top: 53px;
 }
 
 .contact__text{
-    padding-left: 155px;
-    padding-top: 111px;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    height: 152px;
 }
 
 .contact__NES{
-    width: 527px;
-    height: 151px;
+    width: 45%;
+    height: 152px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -736,13 +751,12 @@ padding-top: 53px;
 
 
 .contact__message {
-    width: 509px;
-    height: 152px;
-    margin-right: 280px;
+    width: 45%;
+    height: 100%;
 }
 
 .contact__message1 {
-    width: 509px;
+    width: 100%;
     height: 152px;
     border-top: none;
     border-left: none;
@@ -754,7 +768,9 @@ padding-top: 53px;
     outline: none;
 }
 
-
+.contact__button1 {
+    margin-top: 46px;
+}
 .cotnact__button {
      width: 163px;
      height: 42px;
@@ -763,14 +779,14 @@ padding-top: 53px;
      border-radius: 5px;
      border-style: none;
      color: aliceblue;
-     margin-left: 620px;
-     margin-top: 42px;
      cursor: pointer;
     }
 
     .footer{
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         height: 124px;
         width: 100%;
         background-color: #000;
@@ -779,18 +795,17 @@ padding-top: 53px;
     .footer__img{
         display: flex;
         justify-content: space-between;
-        width: 32px;
-        height: 32px;
+        gap: 34px;
     }
 
     .footer__icons{
-        padding-top: 28px;
-        padding-right: 34px;
+        width: 32px;
+        height: 32px;
     }
 
     .footer__text{
         color: #F5F5F5;
         font-weight: 400;
         font-size: 12px;
-        padding-top: 82px;
+        margin-top: 22px;
     }
